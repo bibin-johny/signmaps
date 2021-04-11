@@ -1,4 +1,4 @@
-# TensorFlow Lite Traffic Signals Detection Android
+# Sign Maps
 ### Overview
 This is a camera app that continuously detects the objects (bounding boxes and classes) in the frames seen by your device's back camera, using a quantized [MobileNet SSD](https://github.com/tensorflow/models/tree/master/research/object_detection) model trained on the [COCO dataset](http://cocodataset.org/). These instructions walk you through building and running the demo on an Android device.
 
