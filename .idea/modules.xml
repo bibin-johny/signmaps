@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/signmaps.iml" filepath="$PROJECT_DIR$/.idea/modules/signmaps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/signmaps.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/signmaps.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tensorflow-lite/signmaps.tensorflow-lite.iml" filepath="$PROJECT_DIR$/.idea/modules/tensorflow-lite/signmaps.tensorflow-lite.iml" />
+    </modules>
+  </component>
+</project>
