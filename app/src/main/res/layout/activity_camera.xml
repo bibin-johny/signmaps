@@ -100,7 +100,7 @@
                 android:id="@+id/sign"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Made by Nicolò Bartelucci and Milo Marchetti"
+                android:text="Made by Martin"
                 android:textAlignment="center"
                 android:textColor="@android:color/white" />
         </LinearLayout>
