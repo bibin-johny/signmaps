@@ -23,7 +23,7 @@ bend
 unevenRoad
 slipperyRoad
 roadNarrows
-construction
+cautionarySign
 trafficSignal
 pedestrianCrossing
 schoolCrossing
