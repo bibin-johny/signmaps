@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.tensorflow.lite.examples.detection;
+package org.tensorflow.lite.examples.signmaps;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -59,8 +59,8 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
-import org.tensorflow.lite.examples.detection.customview.AutoFitTextureView;
-import org.tensorflow.lite.examples.detection.env.Logger;
+import org.tensorflow.lite.examples.signmaps.customview.AutoFitTextureView;
+import org.tensorflow.lite.examples.signmaps.env.Logger;
 
 @SuppressLint("ValidFragment")
 public class CameraConnectionFragment extends Fragment {

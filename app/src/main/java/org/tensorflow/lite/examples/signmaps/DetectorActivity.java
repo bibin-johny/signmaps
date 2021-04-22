@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.tensorflow.lite.examples.detection;
+package org.tensorflow.lite.examples.signmaps;
 
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
@@ -28,35 +28,25 @@ import android.graphics.Typeface;
 import android.media.ImageReader.OnImageAvailableListener;
 import android.os.Build;
 import android.os.SystemClock;
-import android.os.Handler;
 import android.util.Size;
 import android.util.TypedValue;
 import android.widget.Toast;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import android.app.Activity;
-import android.os.Bundle;
+
 import android.speech.tts.TextToSpeech;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import java.util.Locale;
-import android.widget.LinearLayout;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
 
-import org.tensorflow.lite.examples.detection.customview.OverlayView;
-import org.tensorflow.lite.examples.detection.customview.OverlayView.DrawCallback;
-import org.tensorflow.lite.examples.detection.env.BorderedText;
-import org.tensorflow.lite.examples.detection.env.ImageUtils;
-import org.tensorflow.lite.examples.detection.env.Logger;
-import org.tensorflow.lite.examples.detection.tflite.Classifier;
-import org.tensorflow.lite.examples.detection.tflite.TFLiteObjectDetectionAPIModel;
-import org.tensorflow.lite.examples.detection.tracking.MultiBoxTracker;
+import org.tensorflow.lite.examples.signmaps.customview.OverlayView;
+import org.tensorflow.lite.examples.signmaps.customview.OverlayView.DrawCallback;
+import org.tensorflow.lite.examples.signmaps.env.BorderedText;
+import org.tensorflow.lite.examples.signmaps.env.ImageUtils;
+import org.tensorflow.lite.examples.signmaps.env.Logger;
+import org.tensorflow.lite.examples.signmaps.tflite.Classifier;
+import org.tensorflow.lite.examples.signmaps.tflite.TFLiteObjectDetectionAPIModel;
+import org.tensorflow.lite.examples.signmaps.tracking.MultiBoxTracker;
 
 /**
  * An activity that uses a TensorFlowMultiBoxDetector and ObjectTracker to detect and then track
