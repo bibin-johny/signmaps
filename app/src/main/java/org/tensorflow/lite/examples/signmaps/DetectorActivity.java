@@ -72,6 +72,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
     OverlayView trackingOverlay;
     private Integer sensorOrientation;
     private TextToSpeech t1;
+    private String s1="";
 
     private Classifier detector;
 
@@ -237,14 +238,19 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
                             @Override
                             public void run() {
 
+
                                 for (final Classifier.Recognition result : results) {
-                                    if (result.getConfidence()> 0.08) {
-                                        String s1=result.getTitle();
+
+
+                                    if (result.getConfidence()> 0.7 && s1 !=result.getTitle()) {
+                                        String s2=result.getTitle();
+
                                         t1 = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
                                             @Override
                                             public void onInit(int status) {
                                                 if (status == TextToSpeech.SUCCESS) {
-                                                    String textToSay = "Detected Traffic symbol" + s1;
+                                                    String textToSay = "Detected Traffic symbol" + result.getTitle();
+                                                    s1=s2;
                                                     t1.speak(textToSay, TextToSpeech.QUEUE_ADD, null);
                                                 }
                                             }
