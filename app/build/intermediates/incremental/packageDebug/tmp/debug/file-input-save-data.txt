@@ -1,0 +1,35 @@
+#Internal package file, do not edit.
+#Sat Apr 24 17:54:42 IST 2021
+7.path=labelmap.txt
+2.base=C\:\\Users\\Vijay\\Desktop\\signmaps\\app\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+5.set=NATIVE_RESOURCE
+0.path=lib/armeabi-v7a/libtensorflowlite_jni.so
+2.baseType=DIRECTORY
+3.base=C\:\\Users\\Vijay\\Desktop\\signmaps\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
+7.baseType=DIRECTORY
+2.set=ASSET
+1.path=label43segnali.txt
+4.base=C\:\\Users\\Vijay\\Desktop\\signmaps\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
+7.set=ASSET
+count=8
+5.baseType=DIRECTORY
+2.path=notquantizedv3.tflite
+5.base=C\:\\Users\\Vijay\\Desktop\\signmaps\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
+4.set=NATIVE_RESOURCE
+3.path=lib/arm64-v8a/libtensorflowlite_jni.so
+6.base=C\:\\Users\\Vijay\\Desktop\\signmaps\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+3.baseType=DIRECTORY
+1.set=ASSET
+4.path=lib/x86_64/libtensorflowlite_jni.so
+7.base=C\:\\Users\\Vijay\\Desktop\\signmaps\\app\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+6.set=DEX
+1.baseType=DIRECTORY
+6.baseType=DIRECTORY
+5.path=lib/x86/libtensorflowlite_jni.so
+0.base=C\:\\Users\\Vijay\\Desktop\\signmaps\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
+0.baseType=DIRECTORY
+3.set=NATIVE_RESOURCE
+6.path=classes.dex
+1.base=C\:\\Users\\Vijay\\Desktop\\signmaps\\app\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+4.baseType=DIRECTORY
+0.set=NATIVE_RESOURCE

@@ -1,0 +1,4 @@
+#Sun Apr 25 20:26:01 IST 2021
+base.0=C\:\\Users\\Vijay\\Desktop\\signmaps\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
