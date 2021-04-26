@@ -17,9 +17,12 @@
 package org.tensorflow.lite.examples.signmaps;
 
 import android.Manifest;
+import android.app.Dialog;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.hardware.Camera;
 import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraCharacteristics;
@@ -39,7 +42,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import android.util.Size;
 import android.view.Surface;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -70,6 +75,7 @@ public abstract class CameraActivity extends AppCompatActivity
   private Runnable imageConverter;
 
   protected TextView inferenceTimeTextView;
+  Dialog myDialog;
 
   @Override
   protected void onCreate(final Bundle savedInstanceState) {
@@ -82,6 +88,8 @@ public abstract class CameraActivity extends AppCompatActivity
     setSupportActionBar(toolbar);
     getSupportActionBar().setDisplayShowTitleEnabled(false);
 
+    myDialog = new Dialog(this);
+
     if (hasPermission()) {
       setFragment();
     } else {
@@ -89,6 +97,20 @@ public abstract class CameraActivity extends AppCompatActivity
     }
 
     inferenceTimeTextView = findViewById(R.id.inference_info);
+  }
+
+  public void ShowPopup(View v) {
+    TextView txtclose;
+    myDialog.setContentView(R.layout.main_popup);
+    txtclose =(TextView) myDialog.findViewById(R.id.btn_start);
+    txtclose.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        myDialog.dismiss();
+      }
+    });
+    myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+    myDialog.show();
   }
 
   protected int[] getRgbBytes() {
